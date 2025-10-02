@@ -1,0 +1,119 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Para Mi Bebé — 4 Meses</title>
+  <link rel="stylesheet" href="Styles.css">
+   <link rel="icon" type="image/png" href="corazon.jpg">
+  <!-- 1) Vincula el CSS (archivo separado) -->
+
+</head>
+
+<body>
+  <!-- Contenedor principal -->
+  <main class="card">
+    <!-- Encabezado -->
+    <header class="header">
+      <!-- Cambia el texto si quieres otro apodo -->
+      <h1 class="title">Para Mi Bebé</h1>
+      <p class="subtitle">Hoy celebramos 4 meses juntos 💖</p>
+    </header>
+
+    <!-- Mensaje romántico dulce y tierno -->
+    <section id="mensaje" class="section mensaje">
+      <!-- Puedes editar el texto aquí directamente -->
+      <p>
+        Hoy celebramos 4 meses desde que llegaste a mi vida. Gracias por cada
+        sonrisa, cada abrazo y por convertir los pequeños momentos en lo más
+        grande. Te amo más de lo que las palabras pueden decir.
+      </p>
+      <!-- Botón para mostrar/ocultar una versión más larga (controlado por JS) -->
+      <button id="toggleCarta" class="btn">Leer carta completa</button>
+      <div id="cartaCompleta" class="carta oculto">
+        <!-- Carta más larga: edítala libremente -->
+        <p>
+          Mi bebé, cada día contigo es un regalo. Contigo aprendí que el amor
+          verdadero está en lo sencillo: en mirarte, en escuchar tu risa y en
+          sostener tu mano. Gracias por existir 💐.
+        </p>
+      </div>
+    </section>
+
+    <!-- Galería de fotos -->
+    <section id="galeria" class="section galeria">
+      <h2>Recuerdos</h2>
+
+      <!-- INSTRUCCIONES:
+           - Reemplaza los valores data-src con la ruta real de tus imágenes.
+           - Ejemplo de rutas: images/1.jpg, images/2.jpg, images/3.jpg
+           - Sube entre 3 y 5 fotos en la carpeta images/ y actualiza los nombres.
+      -->
+      <div class="gallery-grid">
+        <img class="gallery-item" data-src="imagen1.jpg" alt="Foto 1" />
+        <img class="gallery-item" data-src="imagen2.jpg" alt="Foto 2" />
+        <img class="gallery-item" data-src="imagen3.jpg" alt="Foto 3" />
+        <!-- Si quieres más fotos, duplica la línea anterior y cambia el nombre -->
+      </div>
+
+      <!-- Vista ampliada cuando se hace clic en una foto -->
+      <div id="lightbox" class="lightbox oculto">
+        <button id="cerrarLightbox" class="close">✕</button>
+        <img id="lightboxImg" src="" alt="Ampliada" />
+      </div>
+    </section>
+
+    <!-- Reproductor de música / canción especial -->
+
+    <!-- OPCIONES:
+           * Si tienes un archivo mp3 local: ponlo en la carpeta audio/ y escribe "audio/tumusic.mp3" abajo en src.
+           * Si prefieres usar YouTube, pega el enlace en la variable youtubeEmbed en script.js y descomenta el iframe que viene aquí.
+      -->
+
+    <!-- Opción 1: archivo local (recomendado para uso offline) -->
+
+    <section id="video" class="section video">
+      <h2>Nuestra canción 💖</h2>
+
+      <div class="video-mensaje">
+        <!-- Video -->
+        <div class="video-container">
+          <video controls autoplay muted loop>
+            <source src="toma mi mano.mp4" type="video/mp4">
+            Tu navegador no soporta el video 😢
+          </video>
+        </div>
+
+        <!-- Mensaje -->
+        <div class="mensaje">
+          <h3>Agela & Jhon 💕</h3>
+          <p>
+            "Este video representa lo que somos: un amor auténtico, fuerte y real.
+            Cada sonrisa, cada mirada y cada instante juntos nos recuerdan que lo nuestro está hecho para durar."
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Pie con contador (opcional) -->
+    <footer class="footer">
+      <!-- En script.js hay una variable START_DATE donde pones la fecha en que "empezaron".
+           El script calculará los días y meses juntos. -->
+      <div class="counter">
+        <span id="diasJuntos">--</span>
+        <small>Días juntos</small>
+      </div>
+    </footer>
+  </main>
+
+  <!-- 2) Vincula el JavaScript (archivo separado) -->
+  <script src="scrip.js"></script>
+</body>
+
+</html>
