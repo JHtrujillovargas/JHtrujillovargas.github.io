@@ -1,4 +1,6 @@
-alert("Bienvendida bonita")
+let nombre = ""
+nombre = prompt("ESCIVE TU NOMBRE")
+alert("TE AMO " + nombre + " 💖😘")
 /* script.js
    Aquí pones la lógica de interacción:
    - Carga diferida de imágenes (lazy load)
@@ -104,3 +106,4 @@ if (YOUTUBE_URL) {
    - Para agregar más fotos: añade más <img class="gallery-item" data-src="images/nombre.jpg" /> en index.html.
    - Para cambiar el texto del mensaje: edita el <section id="mensaje"> en index.html.
    -------------------------- */
+
